@@ -3,53 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мое портфолио</title>
+    <title>Портфолио разработчика</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Мое портфолио</h1>
-            <p class="subtitle">Веб-разработчик начинающий</p>
+            <div class="profile">
+                <div class="avatar">
+                    <i class="fas fa-code"></i>
+                </div>
+                <div>
+                    <h1>Алексей Смирнов</h1>
+                    <p class="subtitle">Frontend разработчик</p>
+                </div>
+            </div>
         </header>
         
         <section class="about">
-            <h2>Обо мне</h2>
-            <p>Привет! Меня зовут [Ваше Имя]. Я начинающий веб-разработчик, изучаю HTML, CSS и Git.</p>
+            <h2><i class="fas fa-user"></i> Обо мне</h2>
+            <p>Начинающий веб-разработчик с фокусом на создание чистых, адаптивных интерфейсов. Учусь на практике, создавая проекты и изучая новые технологии.</p>
         </section>
         
         <section class="skills">
-            <h2>Мои навыки</h2>
-            <ul>
-                <li>✅ HTML5 - создание структуры веб-страниц</li>
-                <li>✅ CSS3 - стилизация и оформление</li>
-                <li>✅ Git - контроль версий</li>
-                <li>✅ GitHub - хостинг проектов</li>
-                <li>⚡ Изучаю JavaScript</li>
-            </ul>
+            <h2><i class="fas fa-star"></i> Навыки</h2>
+            <div class="skill-list">
+                <div class="skill">
+                    <span class="skill-name">HTML5</span>
+                    <div class="skill-bar"><div class="skill-level html"></div></div>
+                </div>
+                <div class="skill">
+                    <span class="skill-name">CSS3</span>
+                    <div class="skill-bar"><div class="skill-level css"></div></div>
+                </div>
+                <div class="skill">
+                    <span class="skill-name">JavaScript</span>
+                    <div class="skill-bar"><div class="skill-level js"></div></div>
+                </div>
+                <div class="skill">
+                    <span class="skill-name">Git/GitHub</span>
+                    <div class="skill-bar"><div class="skill-level git"></div></div>
+                </div>
+            </div>
         </section>
         
         <section class="projects">
-            <h2>Мои проекты</h2>
+            <h2><i class="fas fa-folder"></i> Проекты</h2>
             <div class="project-card">
-                <h3>Сайт-портфолио</h3>
-                <p>Этот сайт, который вы сейчас просматриваете!</p>
-                <p><strong>Технологии:</strong> HTML, CSS, GitHub Pages</p>
+                <div class="project-header">
+                    <h3>Сайт-портфолио</h3>
+                    <span class="tag">Активный</span>
+                </div>
+                <p>Личный сайт для демонстрации навыков. Размещен на GitHub Pages.</p>
+                <div class="tech-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>GitHub</span>
+                </div>
+                <a href="#" class="project-link">Посмотреть <i class="fas fa-external-link-alt"></i></a>
             </div>
         </section>
         
         <section class="contact">
-            <h2>Контакты</h2>
-            <p>Email: ваш.email@example.com</p>
-            <p>GitHub: <a href="https://github.com/ваш-username">github.com/ваш-username</a></p>
+            <h2><i class="fas fa-envelope"></i> Контакты</h2>
+            <div class="contact-info">
+                <a href="mailto:dev@example.com" class="contact-link">
+                    <i class="fas fa-envelope"></i> dev@example.com
+                </a>
+                <a href="https://github.com/username" class="contact-link">
+                    <i class="fab fa-github"></i> github.com/username
+                </a>
+                <a href="#" class="contact-link">
+                    <i class="fab fa-telegram"></i> @username
+                </a>
+            </div>
         </section>
         
         <footer>
-            <p>© 2024 Мое портфолио. Все права защищены.</p>
-            <p>Сайт размещен на GitHub Pages</p>
+            <p>© 2024 Портфолио разработчика</p>
+            <p class="hosting-info">
+                <i class="fas fa-server"></i> Хостинг: GitHub Pages
+            </p>
         </footer>
     </div>
 </body>
